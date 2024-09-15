@@ -1,6 +1,13 @@
-# TurboMailer
 
-A robust, scalable, and high-throughput email processing service built with Node.js, BullMQ, Redis, and Nodemailer. TurboMailer allows you to send emails efficiently, handle retries, manage priorities, and monitor queue status with ease.
+<img src="https://i.ibb.co/D8cmwB5/turbomailer-removebg.png" alt="TurboMailer Logo" width="200"/>
+
+**A robust, scalable, and high-throughput email processing service built with Node.js, BullMQ, Redis, and Nodemailer. TurboMailer allows you to send emails efficiently, handle retries, manage priorities, and monitor queue status with ease.**
+
+
+
+
+![GitHub Workflow Status](https://github.com/thelaughinglama/turbomailer/actions/workflows/main.yml/badge.svg) [![coverage](https://codecov.io/github/thelaughinglama/turbomailer/graph/badge.svg?token=ECD82MHQF2)](https://codecov.io/github/thelaughinglama/turbomailer)
+
 
 ## Table of Contents
 - [Features](#features)
