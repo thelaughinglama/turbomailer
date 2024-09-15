@@ -10,6 +10,30 @@
     "start": "node dist/index.js",
     "lint": "eslint ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelaughinglama/turbomailer.git"
+  },
+  "keywords": [
+    "email",
+    "queue",
+    "redis",
+    "bullmq",
+    "nodemailer",
+    "typescript",
+    "nodejs",
+    "high-throughput"
+  ],
+  "author": {
+    "name": "Prashant Joshi",
+    "email": "prashantj724@gmail.com",
+    "url": "https://prashantjoshi.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thelaughinglama/turbomailer/issues"
+  },
+  "homepage": "https://github.com/thelaughinglama/turbomailer#readme",
   "dependencies": {
     "bullmq": "^5.13.0",
     "ioredis": "^5.3.1",
@@ -32,5 +56,18 @@
     "jest-mock": "^29.7.0",
     "ts-jest": "^29.2.5",
     "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "typescript"
+      ]
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
