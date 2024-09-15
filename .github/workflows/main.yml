@@ -1,4 +1,4 @@
-name: CI
+name: Tests
 
 on:
   push:
@@ -33,3 +33,7 @@ jobs:
           REDIS_HOST: localhost
           REDIS_PORT: 6379
         run: npm test
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
