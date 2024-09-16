@@ -6,7 +6,7 @@
 
 
 
-![GitHub Workflow Status](https://github.com/thelaughinglama/turbomailer/actions/workflows/main.yml/badge.svg) [![coverage](https://codecov.io/github/thelaughinglama/turbomailer/graph/badge.svg?token=ECD82MHQF2)](https://codecov.io/github/thelaughinglama/turbomailer)
+![GitHub Workflow Status](https://github.com/thelaughinglama/turbomailer/actions/workflows/main.yml/badge.svg) [![coverage](https://codecov.io/github/thelaughinglama/turbomailer/graph/badge.svg?token=ECD82MHQF2)](https://codecov.io/github/thelaughinglama/turbomailer) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Table of Contents
