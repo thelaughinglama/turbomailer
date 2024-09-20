@@ -32,14 +32,14 @@ export class EmailService {
       ...config.redis,
     };
     this.redisConnection = new Redis(redisOptions);
-
-    this.queue = new Queue('emailQueue', { connection: this.redisConnection });
-    this.queueEvents = new QueueEvents('emailQueue', { connection: this.redisConnection });
+    const queueName = this.config.queueName || 'emailQueue'
+    this.queue = new Queue(queueName, { connection: this.redisConnection });
+    this.queueEvents = new QueueEvents(queueName, { connection: this.redisConnection });
     this.eventEmitter = new EventEmitter();
 
     if (startWorker) {
       this.worker = new Worker(
-        'emailQueue',
+        queueName,
         async job => {
           await this.processEmail(job.data.emailOptions);
         },

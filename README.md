@@ -86,6 +86,7 @@ const config: EmailServiceConfig = {
     host: 'localhost',
     port: 6379,
   },
+  queueName: 'mailerQueue'  // Defaults to emailQueue
 };
 
 const emailService = new EmailService(config);

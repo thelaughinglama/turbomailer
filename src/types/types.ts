@@ -24,6 +24,7 @@ export interface EmailServiceConfig {
   retryLimit?: number;
   backoffStrategy?: number;
   logLevel?: 'error' | 'warn' | 'info' | 'verbose' | 'debug' | 'silly';
+  queueName?: string;
   redis?: {
     host?: string;
     port?: number;
